@@ -52,6 +52,7 @@ nav a{
   flex-wrap: wrap;
   align-items: center;
   align-content: space-around;
+	margin-top: auto;
 
 }
 
@@ -81,23 +82,26 @@ nav a{
 }
 
 .tea_items{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: center;
-	text-align: center;
-	width: 1000px;
+	 display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
-.tea_items_bottom{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: center;
+.tea_item{
+	
+	padding: 0 20px;
+}
+
+.tea_item img{
+	  width: 300px;
+  height: 200px;
+}
+
+.tea_item p{
 	text-align: center;
-	width: 1000px;
 }
 
 /* Third row */
@@ -110,11 +114,22 @@ nav a{
 }
 
 .location {
-  text-align: center;
+ display: flex;
+  flex-direction: column;
+  height: 560px;
   width: 1200px;
-  height: 500px;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   margin: 0 auto;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-size: cover;
+}
+
+.location_title h3{
+	  margin-top: 70px;
+}
+
+.table_column p {
+  margin: 40px 0;
+  padding: 0 0px;
 }
 
 .table {
@@ -123,14 +138,10 @@ nav a{
 }
 
 .table_column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+ background-color: black;
   width: 300px;
-  height: 300px;
-  opacity: 1;
-  background-color: black;
+  margin: 0 20px;
+	text-align: center;
 }
 
 .table li{
